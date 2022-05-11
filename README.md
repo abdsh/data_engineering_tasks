@@ -13,7 +13,7 @@ pip install -r requirements.txt
 CREATE DATABASE oltp_db;
 CREATE DATABASE dwh_db;
 ```
-<p>and put csv files in q1_data folder in postgres home directory in Linux. in my case it is */var/lib/pgsql/* </p>
+<p>and put csv files in q1_data folder in postgres home directory in Linux. in my case it is **/var/lib/pgsql/** </p>
 
 You should run following jupyter notebook files in order :
 
