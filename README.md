@@ -15,13 +15,13 @@ CREATE DATABASE dwh_db;
 ```
 You should run following jupyter notebook files in order :
 
-- create_oltp.ipynb
-- create_dwh.ipynb
-- jobs for filling dimension and fact tables.ipynb
-- answers_ for_question1.ipynb
+- [create_oltp.ipynb](https://github.com/abdsh/data_engineering_tasks/blob/main/create_oltp.ipynb)
+- [create_dwh.ipynb](https://github.com/abdsh/data_engineering_tasks/blob/main/create_dwh.ipynb)
+- [jobs for filling dimension and fact tables.ipynb](https://github.com/abdsh/data_engineering_tasks/blob/main/jobs%20for%20filling%20dimension%20and%20fact%20tables.ipynb)
+- [answers_ for_question1.ipynb](https://github.com/abdsh/data_engineering_tasks/blob/main/answers_%20for_question1.ipynb)
 
 ## For question 2
-first you shoud have **MINIO** cluster up and running with docker-compose
+first you shoud have **MINIO** cluster up and running with **docker-compose**
 <p>You also should download spark 3.2.0</p>
 and set folloing varible in your shell
 
@@ -29,8 +29,8 @@ and set folloing varible in your shell
 export SPARK_HOME=/PATH/TO/YOURE/spark3_2_0
 export PATH=$PATH:$SPARK_HOME/bin
 ```
-for connect spark to minio you also need to download following .JAR files
-and put then in your spark jar directory.
+for connect spark to minio you also need to download following **JAR** files
+and put then in your spark **jars** directory.
 
 ```sh
 - aws-java-sdk-bundle-1.11.375.jar
