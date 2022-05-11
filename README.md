@@ -13,6 +13,8 @@ pip install -r requirements.txt
 CREATE DATABASE oltp_db;
 CREATE DATABASE dwh_db;
 ```
+<p>and put csv files in q1_data folder in postgres home directory in Linux. in my case it is */var/lib/pgsql/* </p>
+
 You should run following jupyter notebook files in order :
 
 - [create_oltp.ipynb](https://github.com/abdsh/data_engineering_tasks/blob/main/create_oltp.ipynb)
@@ -21,15 +23,16 @@ You should run following jupyter notebook files in order :
 - [answers_ for_question1.ipynb](https://github.com/abdsh/data_engineering_tasks/blob/main/answers_%20for_question1.ipynb)
 
 ## For question 2
-first you shoud have **MINIO** cluster up and running with **docker-compose**
+<p>first you shoud have **MINIO** cluster up and running with **docker-compose** </p>
+<p>and upload files in q1_data folder on minio.</p>
 <p>You also should download spark 3.2.0</p>
-and set folloing varible in your shell
+<p>and set folloing variable in your shell </P>
 
 ```sh
 export SPARK_HOME=/PATH/TO/YOURE/spark3_2_0
 export PATH=$PATH:$SPARK_HOME/bin
 ```
-<p>for connect spark to minio you also need to download following **JAR** files</p>
+<p>for connecting spark to minio you also need to download following **JAR** files</p>
 <p>and put them in your spark **jars** directory.</p>
 
 ```sh
