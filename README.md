@@ -29,13 +29,18 @@ and set folloing varible in your shell
 export SPARK_HOME=/PATH/TO/YOURE/spark3_2_0
 export PATH=$PATH:$SPARK_HOME/bin
 ```
-for connect spark to minio you also need to download following **JAR** files
-and put then in your spark **jars** directory.
+<p>for connect spark to minio you also need to download following **JAR** files</p>
+<p>and put them in your spark **jars** directory.</p>
 
 ```sh
 - aws-java-sdk-bundle-1.11.375.jar
 - hadoop-aws-3.3.1.jar
 ```
+You should run following jupyter notebook
+
+- [spark_minio_users.ipynb](https://github.com/abdsh/data_engineering_tasks/blob/main/spark_minio_users.ipynb)
+- [spark_minio_tweets.ipynb](https://github.com/abdsh/data_engineering_tasks/blob/main/spark_minio_tweets.ipynb)
+
 
 
 
