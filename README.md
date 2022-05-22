@@ -6,8 +6,8 @@
 pip install -r requirements.txt
 ```
 ## For question 1
-<p>you should have postgresql up and runnig</p>
-<p>and create two datavase with names oltp_db , dwh_db</p>
+<p>you should have postgresql up and running</p>
+<p>and create two database with names oltp_db , dwh_db</p>
 
 ```sh
 CREATE DATABASE oltp_db;
@@ -25,14 +25,14 @@ You should run following jupyter notebook files in order :
 ## For question 2
 <p>first you shoud have **MINIO** cluster up and running with **docker-compose** </p>
 <p>and upload files in q1_data folder on minio.</p>
-<p>You also should download spark 3.2.0</p>
-<p>and set folloing variable in your shell </P>
+<p>You should also download spark 3.2.0</p>
+<p>and set following variable in your shell </P>
 
 ```sh
 export SPARK_HOME=/PATH/TO/YOURE/spark3_2_0
 export PATH=$PATH:$SPARK_HOME/bin
 ```
-<p>for connecting spark to minio you also need to download following **JAR** files</p>
+<p>in order to connect spark to minio you also need to download following **JAR** files</p>
 <p>and put them in your spark **jars** directory.</p>
 
 ```sh
